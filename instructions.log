@@ -1,0 +1,48 @@
+dfs
+dfgs
+gfdgsg
+
+hgfhf
+fdssdfds
+### suppose hmara software ye file randomly generate krta hai or iska siza mbs me b ja skta hai to hum chahty 
+hen k is file me jo b modification hoye usko git ignore kr dy yani k uski modification wgera ko bother na kry
+
+### we have written that name of file in .gitignore file and now git is not able to detect that file
+
+### agr boht sari random files generate ho ri hen to hum apni gitignore wali file me (*.log) likh den gy it means k jitni
+ b is trah ki extra files hongi wo sari hi ignore ho jaen gi.
+
+### agr meri koi directory esi hai jisy me trackni krna chahti to me apny git ignore wali file me (dirname/) likh doongi 
+to wo poori directry hi ignore ho jaye gi. 
+
+### agr hum chahty hen k sirf hmara bahr wala folder(directory) hi ignore ho or andr ki cheezen track hoti rahen to hum 
+apni .gitignore file me (/dir/) esy likh dengy. 
+
+### koi b folder ko hum agr stage kiye baghair commit krna chahty hen to uskliye command hai 
+(git commit -a -m "Direct commit") .untracked file commit ni ho skti hai.
+
+
+### agr hum ye check krna chahty hen k koi file wgera delet hui hai to konsi hai to hum command chlaen gy ($ git log -p).
+kitni lines ya kon konsi chaneg hui hai sb dikhata hai ye.
+
+### agr hum sari ki sari changes ni dekhna chahty hen or sirf 2 ya 3 hi commits tak dekhna chahty hen to we can type a 
+command ($ git log -p -2) /($ git log -p -3) etc.
+
+### ($ git log --stat) ye sari information collectively deta hai k kia add or kia kia remove hua hai.
+
+### ($ git log --pretty=oneline) ye sari info ek ek line me hi bta deta hai.saary commits ek hi line me dikha deta hai.isi 
+trah ki ek or command ($ git log --pretty=short) ye sari info short me de degi.Agar hum short ki jaga (full) likh den to 
+pooori information de degi ye command.
+
+### ($ git log --since=2.days) ye command btaye gi k pichly 2 din me konsy commit huye hen.(2.weeks/2.months/2.years) ye 
+sara kuch apni need k mutabiq dekh skty hen.
+
+### ($ git log --pretty=format:%h --%an) -->here we are specifying format for the output of record-->%h is for abbreviated
+ hash ka commit and %an is for author name..this is too precise if we need limited info
+hum apni mrzi se koi b format soecify kr skty hen k date wgera b chahiye ya ni.hum se sab git scm k documentation se 
+dekh skty hen.
+
+### if i want to modify commit staement with my own and i have changed something but i want to merge it with some previous
+ commit then th ecomand i have to run is($ git commit --amend)
+-->It will open vim editor where i can be able to edit by pressing (i) key .And to quit that window i have to press the keys
+ in order(ESC-->:-->w-->q-->Enter).
